@@ -1,0 +1,19 @@
+What I understand?
+The project involves developing a set of HTTP APIs that adhere to best practices and fulfill the following capabilities:
+
+	1. Accept a Payload: The APIs should be able to accept a payload containing receivables data. The structure of this payload should adhere to a specific format . The received data 	should be stored.
+
+	2. Return Summary Statistics: The APIs should provide summary statistics about the stored receivables data. Specifically, the APIs should return information about the value of open 	and closed invoices.
+
+-----------------------------------
+Solution:
+	Create a .net core API Project that includes one database table name 'Invoice', setup its repositories and create an API controller including following endpoint;
+
+	1. Add Payload: Implemented an endpoint that allows clients to submit payloads in a specific format, as provided. These payloads will be parsed and stored in the 'Invoice' table.
+
+	2. Get Invoice List by Status: Developed an endpoint that enables clients to retrieve a list of 'Invoice' records based on their open or closed status. This function is essential for 	categorizing and managing invoice data efficiently.
+
+	3. Get Invoice Summary by Status: Created an endpoint that calculates and provides a summary of 'Invoice' records based on their open or closed status. Specifically, this summary end 	point should include the total 'openingValue' and 'paidValue' for the selected status.
+
+------------------------------------
+Estimated Time: 3 hrs
